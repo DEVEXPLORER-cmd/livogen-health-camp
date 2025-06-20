@@ -1,0 +1,45 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FDFBF8;
+    color: #3D3D3D;
+}
+.text-brand-primary { color: #D9534F; }
+.bg-brand-primary { background-color: #D9534F; }
+.bg-brand-secondary { background-color: #F0EAE2; }
+.border-brand-primary { border-color: #D9534F; }
+.nav-link {
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 4px;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D9534F;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 300px;
+    width: 100%;
+    max-width: 300px;
+}
+@media (min-width: 768px) {
+    .chart-container {
+        height: 350px;
+        max-width: 350px;
+    }
+}
