@@ -1,0 +1,12 @@
+{
+  "name": "livogen-health-camp",
+  "version": "1.0.0",
+  "description": "Frontend for Livogen's 12 ka Naara health initiative",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {}
+}
